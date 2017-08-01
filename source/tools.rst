@@ -1,3 +1,5 @@
+.. _tools:
+
 Documentation Tools
 ===================
 
@@ -152,6 +154,8 @@ Once you have SourceTree installed and linked to your Github account, you can th
 .. seealso::
 
   For a step-by-step guide to installing SourceTree, linking it with Github, and cloning a remote repository, see the `Install and Set Up SourceTree <https://confluence.atlassian.com/get-started-with-sourcetree/install-and-set-up-sourcetree-847359043.html>`_ documentation.
+
+.. _tools-using-github-after:
 
 After writing documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

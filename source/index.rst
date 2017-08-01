@@ -13,4 +13,5 @@ Welcome to DHIL Documentation Guide's documentation!
    intro
    tools
    markup
+   contributors
    todo
