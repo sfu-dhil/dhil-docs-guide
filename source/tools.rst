@@ -1,3 +1,5 @@
+.. _tools:
+
 Documentation Tools
 ===================
 
@@ -9,6 +11,10 @@ Using the command line
 ----------------------
 
 Installing and using Sphinx will require a basic understanding how to use the command line and a few commands. Using Sphinx primarily requires locating and opening the directory (or folder) where the documentation is and performing commands within that directory.
+
+Each operating system has a different set of commands and different ways to access the command line. The instructions below should work for Mac OS X, Linux, and other Unix-ish operating systems.
+
+In Mac OS X, access to the command line is through a program called Terminal.app, which is always installed in the Utilities folder, inside Applications.
 
 **cd**
 
@@ -35,9 +41,9 @@ In this case, it would look like this:
 
 This shows the full path for your current directory.
 
-If you wish to go up a level to the previous or enclosing directory, you also use the :kbd:`cd` command, but you do not need to input a directory name. In the command line :kbd:`.` represents your current directory and :kbd:`..` represents the previous or enclosing directory.
+If you wish to go up a level to the previous or enclosing directory, you also use the :kbd:`cd` command, but you do not need to input a directory name. In the command line :kbd:`.` represents your current directory and :kbd:`..` represents the parent directory.
 
-To change to the previous directory you can enter the following:
+To change to the parent directory you can enter the following:
 
 .. code-block:: console
 
@@ -148,6 +154,8 @@ Once you have SourceTree installed and linked to your Github account, you can th
 .. seealso::
 
   For a step-by-step guide to installing SourceTree, linking it with Github, and cloning a remote repository, see the `Install and Set Up SourceTree <https://confluence.atlassian.com/get-started-with-sourcetree/install-and-set-up-sourcetree-847359043.html>`_ documentation.
+
+.. _tools-using-github-after:
 
 After writing documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
