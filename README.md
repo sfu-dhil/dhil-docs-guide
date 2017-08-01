@@ -6,18 +6,18 @@ The DHIL documentation guide is built using Sphinx.
 
 ### Install Sphinx
 ```console
-pip install sphinx
+$ pip install sphinx
 ```
 ### Get the code from GitHub
 ```console
-git clone https://github.com/sfu-dhil/dhil-docs-guide.git
+$ git clone https://github.com/sfu-dhil/dhil-docs-guide.git
 ```
 ### Build the documentation from source
 Inside the dhil-docs-guide directory run: 
 ```console
-make html
+$ make html
 ```
 ### Open the documentation
 ```console
-open build/html/index.html
+$ open build/html/index.html
 ```
