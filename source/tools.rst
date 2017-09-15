@@ -12,7 +12,7 @@ Using the command line
 
 Installing and using Sphinx will require a basic understanding how to use the command line and a few commands. Using Sphinx primarily requires locating and opening the directory (or folder) where the documentation is and performing commands within that directory.
 
-Each operating system has a different set of commands and different ways to access the command line. The instructions below should work for Mac OS X, Linux, and other Unix-ish operating systems.
+Each operating system has a different set of commands and different ways to access the command line. The instructions below should work for `bash <https://www.gnu.org/software/bash/>`_ using systems like Mac OS X, Linux, and other Unix-ish operating systems. For Windows users, the easiest way to follow the guide is to download a bash interpreter like `Cygwin <https://cygwin.com/>`_.
 
 In Mac OS X, access to the command line is through a program called Terminal.app, which is always installed in the Utilities folder, inside Applications.
 
@@ -81,7 +81,7 @@ Sphinx is installed via the command line using pip, a package management system 
 
   $ python --version
 
-If you already have python it will return a version number. If unsuccessful it will return "command not found." If you are using a Mac, python should be installed already. 
+If you already have python it will return a version number. If unsuccessful it will return "command not found." Make sure you download the latest version of Python 2 rather than Python 3 for legacy support. If you are using a Mac, python should be installed already. 
 
 Next check if pip is installed by running the following in the command line:
 
@@ -100,6 +100,12 @@ Once python and pip are set up, you can install Sphinx by using the following co
 .. code-block:: console
 
   $ pip install Sphinx
+
+Run the following command to setup Sphinx's environmental variables:
+
+.. code-block:: console
+
+  $ sphinx-quickstart
 
 More detailed installation instructions can be found in the `Sphinx guide <http://www.sphinx-doc.org/en/stable/tutorial.html>`_.
 
@@ -135,7 +141,13 @@ After hitting enter, a number of things will appear in the terminal window. If i
 
   $ open build/html/index.html
 
-This will open the index page of your newly created documentation. Congratulations!
+Windows users might not be able to use the 'open' command. 'explorer' is the next best thing. It will open the directory in the GUI file explorer. 
+
+.. code-block:: console
+
+  $ explorer build/html
+
+Click on the index.html file of your newly created documentation. Congratulations!
 
 .. _tools-using-github:
 
@@ -147,27 +159,33 @@ All documentation will be stored and updated on Github. If you don't already hav
 Before writing documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The first thing you will do after creating your own Github account is fork or copy the documentation you will be working on from the DHIL Github page to your personal page. The next step will be to create your own local copy of the documentation repository on your computer. You can do this using the command line or by using `SourceTree <https://www.sourcetreeapp.com>`_, a free git client. Download and instalml SourceTree. Add your Github account login to source tree.
+The first thing you will do after creating your own Github account is fork or copy the documentation you will be working on from the DHIL Github page to your personal page (click on the 'fork' button on the upper right corner on the project page you want to fork). The next step will be to create your own local copy of the documentation repository on your computer. You can do this using the command line or by using `SourceTree <https://www.sourcetreeapp.com>`_, a free git client. Al Download and install SourceTree. A better alternative for Mac and Windows systems is the `GitHub Desktop <https://desktop.github.com/>`_. Along with it comes the **Git Bash** -a bash interpreter you can use for running Git on command line. Add your Github account login to SourceTree / GitHub Desktop.
 
-Once you have SourceTree installed and linked to your Github account, you can then clone or download a copy of the documentation to your local computer using SourceTree. From SourceTree and choose **Remote** tab. The copy of the documentation you forked on Github will appear here. Choose **Clone** and select where you would like to save the local copy of the documentation repository. Once you have done this, you will be able to edit the documentation on your computer.
+Once you have SourceTree or GitHub Desktop installed and linked to your Github account, you can then clone or download a copy of the documentation to your local computer. From SourceTree/GitHub Desktop, choose the **Remote** tab. The copy of the documentation you forked on Github will appear here. Choose **Clone** and select where you would like to save the local copy of the documentation repository. Once you have done this, you will be able to edit the documentation on your computer.
 
 .. seealso::
 
   For a step-by-step guide to installing SourceTree, linking it with Github, and cloning a remote repository, see the `Install and Set Up SourceTree <https://confluence.atlassian.com/get-started-with-sourcetree/install-and-set-up-sourcetree-847359043.html>`_ documentation.
+
+.. seealso::
+
+  For a step-by-step guide to installing GitHub Desktop, linking it with Github, and cloning a remote repository, see the `Install and Set Up GitHub Desktop <https://help.github.com/desktop/guides/getting-started/>`_ documentation.
 
 .. _tools-using-github-after:
 
 After writing documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After you have finished writing and editing your documentation, you will need to commit the changes you've made in SourceTree, push it to your remote copy of the repository on Github, then submit a pull request on the DHIL Github page.
+After you have finished writing and editing your documentation, you will need to commit the changes you've made in SourceTree / GitHub Desktop, push it to your remote copy of the repository on Github, then submit a pull request on the DHIL Github page.
 
 .. seealso::
 
   For more information on using git within SourceTree, see the `Work using Git <https://confluence.atlassian.com/get-started-with-sourcetree/work-using-git-847359053.html>`_ documentation from SourceTree.
 
-For instructions on commiting and pushing the changes, see SourceTree's `Commit and push a change (Git) <https://confluence.atlassian.com/get-started-with-sourcetree/commit-and-push-a-change-git-847359114.html>`_ instructions.
+For instructions on commiting and pushing the changes, see SourceTree's `Commit and push a change (Git) guide <https://confluence.atlassian.com/get-started-with-sourcetree/commit-and-push-a-change-git-847359114.html>`_ instructions.
 
-Once you have pushed your changes to your remote branch, you will then need to initiate a pull request, which asks the creator of the original repository (in this case, the DHIL Github account) to approve and incorporate the changes you have made. To do this, navigate to your forked version of the documentation repository on Github (now up-to-date with the changes you pushed from SourceTree). In the top-right of the box with all the files listed (below the green "Clone or download" button), there is a **Pull Request** button. Click on this and go through the steps. Once this is finished, the pull request has been made. You will get a notification when the administrator of the DHIL Github page either approves or rejects your pull request. 
+If you rather choose to use Git Bash to commit and push changes, see GitHub's `Managing files in a repository guide <https://help.github.com/categories/managing-files-in-a-repository/>`_ for instructions.
+
+Once you have pushed your changes to your remote branch, you will then need to initiate a pull request, which asks the creator of the original repository (in this case, the DHIL Github account) to approve and incorporate the changes you have made. To do this, navigate to your forked version of the documentation repository on Github (now up-to-date with the changes you pushed from SourceTree / GitHub Desktop). In the top-right of the box with all the files listed (below the green "Clone or download" button), there is a **Pull Request** button. Click on this and go through the steps. Once this is finished, the pull request has been made. You will get a notification when the administrator of the DHIL Github page either approves or rejects your pull request. 
 
 That's it! You've successfully added your documentation to the DHIL Github. Congratulations!
