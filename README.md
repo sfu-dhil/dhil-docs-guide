@@ -31,5 +31,4 @@ Windows users should try the following:
 ```console
 $ explorer build/html
 ```
-Then click on the 'index.html' in the GUI file explorer window.
-
+Then click on the index.html in the GUI file explorer that just opened.
