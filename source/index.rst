@@ -9,9 +9,10 @@ Welcome to DHIL Documentation Guide's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
+
    intro
    tools
    markup
+   bootstrap
    contributors
    todo
