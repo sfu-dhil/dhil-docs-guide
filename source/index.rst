@@ -14,5 +14,6 @@ Welcome to DHIL Documentation Guide's documentation!
    tools
    markup
    bootstrap
+   authentication
    contributors
    todo
