@@ -6,10 +6,10 @@ Welcome to the DHIL Documentation Guide Contributors page. Below you will find a
 Contributor List
 ----------------
 
-**Erik Hanson**, Simon Fraser University, Research assistant 
+**Erik Hanson**, Simon Fraser University, Research assistant
   Wrote and created the guide, including the :ref:`introduction <intro>`, :ref:`documentation tools <tools>`, and :ref:`documentation markup <markup-documentation-markup>` sections.
 
-**Doğan Erişen**, Simon Fraser University, Research assistant 
+**Doğan Erişen**, Simon Fraser University, Research assistant
   Updated & added tips for Windows users to the :ref:`documentation tools <tools>` section.
 
 Add yourself as a contributor
